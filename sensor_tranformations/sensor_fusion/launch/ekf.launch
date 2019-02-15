@@ -1,0 +1,32 @@
+<launch>
+  <param name="/use_sime_time" value="true"/>
+  <!--node pkg="pni_trax_imu" type="pni_trax_imu.py" name="pni_trax_imu" output="screen">
+</node-->
+
+<node pkg="robot_transforms" type="temp_frame_changer.py" name="temp_frame_changer" output="screen">
+</node>
+
+  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_se" clear_params="true">
+    <rosparam command="load" file="$(find sensor_fusion)/launch/ekf_template.yaml" />
+
+    <!--remap from="odometry/filtered" to="jk"/-->
+  </node>
+  <node pkg="robot_transforms" type="transformed_sensors.py" name="transformed_sensors" output="screen">
+  </node>
+
+  <node pkg="robot_transforms" type="tf_broadcaster" name="tf_broadcaster" output="screen">
+
+</node>
+
+<!--node pkg="imu_filter_madgwick" type="imu_filter_node" name="imu_filter_node"
+   output="screen">
+
+   <param name="use_mag" value="false"/>
+   <param name="use_magnetic_field_msg" value="false"/>
+ </node-->
+
+  <!--node name="DVL_Depth_Parse" pkg="sensor_fusion" type="DVL_Depth_Parse.py" output="screen" >
+</node-->
+<!--node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0.3302 0 0 0 base_link base_imu 100" />
+<node pkg="tf" type="static_transform_publisher" name="link2_broadcaster" args="0 0 0.127 0 0 -3.14/2 base_link base_dvl 100" /-->
+</launch>

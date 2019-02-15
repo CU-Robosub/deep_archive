@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="robot_transforms" type="temp_frame_changer.py" name="temp_frame_changer" output="screen">
+  </node>
+  <node pkg="robot_transforms" type="tf_broadcaster" name="tf_broadcaster" output="screen">
+  </node>
+  <node pkg="robot_transforms" type="transformed_sensors.py" name="transformed_sensors" output="screen">
+</node>
+
+</launch>
