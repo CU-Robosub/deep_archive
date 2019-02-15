@@ -1,0 +1,8 @@
+*.pyc
+db
+incremental_db
+simulation
+*.qsf
+*.qws
+*.qdf
+*.bak
