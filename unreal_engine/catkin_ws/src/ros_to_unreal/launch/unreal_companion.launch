@@ -1,0 +1,13 @@
+<launch>
+    <node name="converter_sub" pkg="ros_to_unreal" type="converter_sub.py" >
+        <param name="x_set" value="/local_control/pid/drive/set" />
+        <param name="y_set" value="/local_control/pid/strafe/set" />
+        <param name="z_set" value="/local_control/pid/depth/set" />
+        <param name="yaw_set" value="/local_control/pid/yaw/set" />
+        <param name="roll_set" value="/local_control/pid/roll/set" />
+        <param name="pitch_set" value="/local_control/pid/pitch/set" />
+    </node>
+    <node name="converter_pub" pkg="ros_to_unreal" type="converter_pub.py" >
+        <param name="odometry" value="/odometry/filtered" />
+    </node>
+</launch>
