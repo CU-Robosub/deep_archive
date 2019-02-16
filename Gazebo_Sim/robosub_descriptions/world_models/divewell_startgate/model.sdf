@@ -1,0 +1,248 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="divewell">
+    <static>true</static>
+    <link name="link">
+
+      <visual name="gate_top_left">
+        <cast_shadows>true</cast_shadows>
+        <pose>4.5 -0.762 -1 1.57 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0381</radius>
+            <length>1.524</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://Media/materials/scripts/pool.material</uri>
+            <name>Robosub/black</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name="gate_flag_left">
+        <cast_shadows>false</cast_shadows>
+        <pose>4.5 -0.1016 -1.1905 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>.001 0.2032 0.3048</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://Media/materials/scripts/pool.material</uri>
+            <name>Robosub/black</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name="gate_flag_right">
+        <cast_shadows>false</cast_shadows>
+        <pose>4.5 0.1016 -1.1905 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>.001 0.2032 0.3048</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://Media/materials/scripts/pool.material</uri>
+            <name>Robosub/red</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name="gate_top_right">
+        <cast_shadows>true</cast_shadows>
+        <pose>4.5 0.762 -1 1.57 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0381</radius>
+            <length>1.524</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://Media/materials/scripts/pool.material</uri>
+            <name>Robosub/red</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name="gate_left_orange">
+        <cast_shadows>true</cast_shadows>
+        <pose>4.5 -1.5621 -1.7615 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0381</radius>
+            <length>1.219</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://Media/materials/scripts/pool.material</uri>
+            <name>Robosub/orange</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name="gate_left_black">
+        <cast_shadows>true</cast_shadows>
+        <pose>4.5 -1.5621 -1.7615 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0361</radius>
+            <length>1.524</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://Media/materials/scripts/pool.material</uri>
+            <name>Robosub/black</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name="gate_right_orange">
+        <cast_shadows>true</cast_shadows>
+        <pose>4.5 1.5621 -1.7615 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0381</radius>
+            <length>1.219</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://Media/materials/scripts/pool.material</uri>
+            <name>Robosub/orange</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name="gate_right_black">
+        <cast_shadows>true</cast_shadows>
+        <pose>4.5 1.5621 -1.7615 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0361</radius>
+            <length>1.524</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://Media/materials/scripts/pool.material</uri>
+            <name>Robosub/black</name>
+          </script>
+        </material>
+      </visual>
+
+
+      <visual name="ground">
+        <cast_shadows>false</cast_shadows>
+        <pose>0 0 -4 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>18 12 .1</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://Media/materials/scripts/pool.material</uri>
+            <name>Robosub/PoolWall</name>
+          </script>
+        </material>
+      </visual>
+
+      <collision name="ground">
+        <pose>0 0 -4 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>18 12 .1</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name="surface">
+        <cast_shadows>false</cast_shadows>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>18 12 .1</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://Media/materials/scripts/water.material</uri>
+            <name>UUVSimulator/StaticDeepWater</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name="north">
+        <cast_shadows>false</cast_shadows>
+        <pose>9 0 -2 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>.1 12 4</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://Media/materials/scripts/pool.material</uri>
+            <name>Robosub/PoolWall</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name="south">
+        <cast_shadows>false</cast_shadows>
+        <pose>-9 0 -2 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>.1 12 4</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://Media/materials/scripts/pool.material</uri>
+            <name>Robosub/PoolWall</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name="east">
+        <cast_shadows>false</cast_shadows>
+        <pose>0 -6 -2 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>18 .1 4</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://Media/materials/scripts/pool.material</uri>
+            <name>Robosub/PoolWall</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name="west">
+        <cast_shadows>false</cast_shadows>
+        <pose>0 6 -2 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>18 .1 4</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://Media/materials/scripts/pool.material</uri>
+            <name>Robosub/PoolWall</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
