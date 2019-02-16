@@ -1,0 +1,5 @@
+# Ignore emacs backup files
+*~
+*.pyc
+
+docs/build
