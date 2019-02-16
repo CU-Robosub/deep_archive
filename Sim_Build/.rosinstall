@@ -1,0 +1,30 @@
+- git:
+    local-name: src/Debugging-Console
+    uri: https://github.com/CU-Robosub/Debugging-Console.git
+- git:
+    local-name: src/Description
+    uri: https://github.com/CU-Robosub/Description.git
+- git:
+    local-name: src/Drivers
+    uri: https://github.com/CU-Robosub/Drivers.git
+- git:
+    local-name: src/Gazebo_Sim
+    uri: https://github.com/CU-Robosub/Gazebo_Sim.git
+- git:
+    local-name: src/Global_Control
+    uri: https://github.com/CU-Robosub/Global_Control.git
+- git:
+    local-name: src/Local_Control
+    uri: https://github.com/CU-Robosub/Local_Control.git
+- git:
+    local-name: src/Perception
+    uri: https://github.com/CU-Robosub/Perception.git
+- git:
+    local-name: src/darknet_ros
+    uri: https://github.com/CU-Robosub/darknet_ros.git
+- git:
+    local-name: src/sensor_fusion
+    uri: https://github.com/CU-Robosub/sensor_fusion.git
+- git:
+    local-name: src/uuv_simulator
+    uri: https://github.com/uuvsimulator/uuv_simulator.git
