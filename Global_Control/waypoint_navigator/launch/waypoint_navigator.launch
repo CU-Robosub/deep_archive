@@ -1,0 +1,4 @@
+<launch>
+    <node name="waypoint" pkg="waypoint_navigator" type="WaypointActionServer.py" output="screen">
+    </node>
+</launch>

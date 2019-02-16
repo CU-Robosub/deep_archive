@@ -1,0 +1,6 @@
+<launch>
+  <group ns="mrgostraight">
+    <node name="mrgostraight_node" pkg="mrgostraight" type="mrgostraight_node.py" output="screen" >
+    </node>
+  </group>
+</launch>
